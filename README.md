@@ -39,6 +39,9 @@
 5. Installing Packages
 ```
 npm install
+npm install -g npm
+npm i discord-buttons
+npm i discord.js
 node index.js
 ```
 
