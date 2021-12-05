@@ -36,6 +36,11 @@
       * NASA_TOKEN=Your Nasa Token
 ```
 4. Don't Know How To Get Apis? [Join Our Discord](https://discord.gg/ExKW6wHuY9)
+5. Installing Packages
+```
+npm install
+node index.js
+```
 
 <hr>
 
