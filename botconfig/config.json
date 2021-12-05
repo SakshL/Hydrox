@@ -10,8 +10,8 @@
   },
 
   "spotify": {
-    "clientSecret": "75a2641eaa394c2a82a9df7e9a853026",
-    "clientID": "4b37e7fb49a54454afc6539455f10a4d"
+    "clientSecret": "",
+    "clientID": ""
   },
 
   "settings": {
