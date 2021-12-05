@@ -25,7 +25,7 @@
 <hr>
 1. Fork The Repo / Star It
 
-2. Go To **botconfig/config.json* / *emoji.json*
+2. Go To *botconfig/config.json* / *emoji.json*
 
 3. Add Your Bot Token And APIS In Env File.
 ```
