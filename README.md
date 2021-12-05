@@ -23,7 +23,7 @@
 | [![Deploy to heroku](https://www.herokucdn.com/deploy/button.png)](https://replit.com/@NotSaksh/Hydrox#README.md) | [![Run on Repl.it](https://replit.com/badge/github/NotSaksh/Hydrox)](https://replit.com/@NotSaksh/Hydrox) | [![Run on Terohost](https://raw.githubusercontent.com/IgorKowalczyk/majobot/master/src/img/readme/terohost_scaled.png)](https://terohost.com) |
 
 <hr>
-1. *Fork The Repl / Star It*
+1. Fork The Repl / Star It
 
 2. Go To **botconfig/config.json* / *emoji.json*
 
