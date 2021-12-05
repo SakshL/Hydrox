@@ -75,7 +75,7 @@ This project is licensed under the MIT. See the [LICENSE](https://github.com/Not
 
 ## Contributors
 - [NotUnknown](https://github.com/NotUnknown) (Emoji config support, Bug fixes, New features, Testing)
-- [Meko](https://github.com/meko) (Bug fixes, Command handler improvements, Testing, New features)
+- [Meko](https://github.com/meko1046) (Bug fixes, Command handler improvements, Testing, New features)
 - [Exil](https://github.com/dxil) (New Features, Bug fixes, Testing, Help Page , New Updateds, Support)
 - [Joao-Victor-Liporini](https://github.com/Joao-Victor-Liporini) (Bug fixes, Command handler improvements, Testing, New features)
 
