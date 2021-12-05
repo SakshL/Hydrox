@@ -1,0 +1,11 @@
+{
+  "default_prefix": ",",
+  "owners": ["745581095747059722", "440200028292907048", "506505845215985674", "729554449844011130"],
+  "timeout": 300000,
+  "invite_link": "https://discord.com/api/oauth2/authorize?client_id=882311254423765012&permissions=8&scope=bot",
+  "error_logs": "873980418934861824",
+  "success_logs": "873980446776627272",
+  "disable_fetching": false,
+  "token": "ODgyMzExMjU0NDIzNzY1MDEy.YS5iYw.rFJl5iQiDk87tOVRVyPIJU5-Q9s"
+}
+

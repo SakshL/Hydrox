@@ -1,0 +1,124 @@
+<%- include('./includes/head.ejs', {bot, user}) %>
+<div class="container px-3 px-3 mt-5 pt-5">
+    <div class="columns container px-3 is-multiline">
+        <div class="column is-2">
+            <img draggable="false" class="pulse-avatar-<%=member.presence.status%>"  onerror=" imgerror(this);"="" src="<%= member.displayAvatarURL({dynamic: true}) %>" style="width: 200px; border-radius: 50%;">
+        </div>
+        <div class="column is-6">
+            <br>
+            <p translate="no" class="has-text-white is-size-5" style="margin-bottom: 10px; font-size: 40px;"><%= user.username %><span class="is-size-4" style="opacity: 0.2;" style="font-size: 30px;">#<%= user.discriminator %></span> <i style="font-size: 30px;" class="status-circle fad fa-circle status-<%=member.presence.status%>"></i></p>
+           <div class="user-badges">
+                <% if(member.flags) {%>
+                <%
+                            member.flags.toArray().forEach(flag =>{
+                                if (flag === "HOUSE_BALANCE") { %>
+                                    <span data-tooltip="Hypesquad Balance"
+                                    data-tooltip-location="top">
+                                    <img draggable="false" src="https://discord.com/assets/9fdc63ef8a3cc1617c7586286c34e4f1.svg" data-tooltip="Hypesquad Balance" class="mr-1" data-tippy-content="Hypesquad Balance" width="32px">
+                                </span>
+                                    <% }
+                
+                               if (flag === "HOUSE_BRILLIANCE") { %>
+                                <span data-tooltip="Hypesquad Brilliance"
+                                    data-tooltip-location="top">
+                               <img draggable="false" src="https://ptb.discord.com/assets/48cf0556d93901c8cb16317be2436523.svg" class="mr-1" data-tippy-content="HypeSquad Brilliance" width="32px">
+                               </span>
+                               <% }
+                
+                               if (flag === "HOUSE_BRAVERY") { %>
+                                <span data-tooltip="Hypesquad Bravery"
+                                    data-tooltip-location="top">
+                               <img draggable="false" src="https://canary.discord.com/assets/64ae1208b6aefc0a0c3681e6be36f0ff.svg" class=" mr-1" data-tippy-content="HypeSquad Bravery" width="32px">
+                          </span>
+                               <% }
+                               
+                               if (flag === "VERIFIED_DEVELOPER") { %>
+                                <span data-tooltip="Verified Developer"
+                                    data-tooltip-location="top">
+                               <img draggable="false" src="https://discord.com/assets/45cd06af582dcd3c6b79370b4e3630de.svg" class=" mr-1" data-tippy-content="Early Verified Developer" width="32px">
+                               </span>
+                               <% }
+                               
+                               if (flag === "EARLY_SUPPORTER") { %>
+                                <span data-tooltip="Early Supporter"
+                                    data-tooltip-location="top">
+                               <img draggable="false" src="https://discord.com/assets/23e59d799436a73c024819f84ea0b627.svg" class=" mr-1" data-tippy-content="Early Supporter" width="32px">
+                               </span>
+                               <% }
+                            })
+                            %>
+                            <% } %>
+                          <% let av = member.displayAvatarURL({dynamic: true}) %>
+                          <% if(av.endsWith('.gif')) {%>
+                            <span data-tooltip="Nitro Subscriber"
+                                    data-tooltip-location="top">
+                            <img draggable="false" src="https://discord.com/assets/386884eecd36164487505ddfbac35a9d.svg" class="mr-1" data-tippy-content="Nitro Subscriber" width="32px">
+                            </span>
+                            <% } %>      
+             </div>
+            <br>
+        </div>
+  </div>
+  <a href="/uptime" style="float: right;" class="btn btn-primary has-text-white mb-3">Add Link</a>
+<table id="tableData" class="table table-dark table-striped" data-toggle="table" data-pagination="true" data-search="true">
+  <thead>
+  <th>Uptime Link</th>
+  <th>Uptime Name</th>
+  <th>Operation</th>
+  <th>Edit</th>
+  </thead>
+          <% uptimes.map(a => {%>
+            <tr>
+                <td><%= a.link %></td>
+                <td><%= a.name %></td>
+              <td><a onclick='deletequest("<%= a.code %>")' class="btn btn-danger">Delete</a></td>
+              <td><a onclick='href="/uptime/<%= a.code %>/edit"' class="btn btn-primary">Edit</a></td>
+            </tr>
+         <% }); %>
+</table>
+</div>    
+</div>
+</div>
+
+<script>
+var urlParams = new URLSearchParams(window.location.search);
+    if(urlParams.has('success') && urlParams.get('success')){
+    Swal.fire({
+     icon: 'success',
+     title: 'Successful...',
+     closeOnConfirm: false,
+     text: urlParams.get('message'),
+     footer: 'Copyright 2021 &copy Hydrox - All right reserved.'
+    }).then((result) => {
+  if (result.isConfirmed) {
+    window.location.href = `/@me`;
+  }
+})
+}
+function deletequest(uptimecode) {
+Swal.fire({
+  title: 'Are you sure?',
+  text: "Are you sure you want to permanently delete the link you selected?",
+  icon: 'warning',
+  showCancelButton: true,
+  confirmButtonText: 'Yes, delete it!',
+  cancelButtonText: 'No, cancel it!',
+  reverseButtons: true
+}).then((result) => {
+  if (result.isConfirmed) {
+    window.location.href = '/uptime/'+uptimecode+'/delete';
+  } else {
+    Swal.fire(
+      'Canceled..',
+      'Link deletion from the uptime system has been canceled.',
+      'error'
+    )
+  }
+})
+}
+</script>
+<br><br><br>
+<%- include('./includes/foot.ejs') %>
+
+
+

@@ -1,0 +1,49 @@
+<%- include('./includes/head', {bot, user}) %>
+<style>
+    h1 {
+      color: #fFf;
+    }
+    .background {
+      position: relative;
+  }
+  
+  .layer {
+      background-color: rgba(248, 247, 216, 0.7);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+  }
+  </style>
+<div class="container">
+<br>
+<br>
+<h3 class="mt-6" style="color: #fff;">
+        <i class="fad fa-user-crown"></i> Owners
+        </h3>
+        <div class="vcodes_divider"></div>
+    <% config.dashboard.owners.forEach(a => { %>
+    <center>
+        <div class="columns is-multiline is-desktop is-variable is-7 mt-3 pt-5" style="border: none;">
+      <div class="col-md-6 col-lg-4 pb-3">
+        <div class="card vcodes-card-custom bg-vcodes border-white border-0">
+          <div class="vcodes-card-custom-img" onerror="backImgError(this);" style="background-image: url('/img/banner.png');"></div>
+          <div class="card-custom-avatar">
+            <img class="img-fluid" class="pulse-avatar-online" onerror="imgError(this);" src="<% const botowner = bot.users.fetch(a.id).then(function(fuckedupuser) { %><%= fuckedupuser.displayAvatarURL() %><% }) %>" alt="Avatar" />
+          </div>
+          <div style="background: transparent;" class="card-body">
+            <h4 translate="no" class="card-title"><%= bot.users.cache.get(a.id).username %>
+            <span data-tooltip="Verified" data-tooltip-location="top"><i class="fad fa-badge-check has-text-danger"></i></span>
+            </h4>
+            <p translate="no" class="card-text vCodesbotDesc"><%= a.desc %></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </center>
+      <% }) %>
+            </div>
+</div>
+<br><br><br><br>
+<%- include('./includes/foot') %>

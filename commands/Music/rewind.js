@@ -1,0 +1,57 @@
+const {
+  MessageEmbed
+} = require(`discord.js`);
+const config = require(`../../botconfig/config.json`);
+const ee = require(`../../botconfig/embed.json`);
+const emoji = require('../../emoji.json')
+const {
+  createBar,
+  format
+} = require(`../../handlers/functions`);
+module.exports = {
+  name: `rewind`,
+  category: `🎶 Music`,
+  aliases: [`seekbackwards`, `rew`],
+  description: `Seeks a specific amount of Seconds backwards`,
+  usage: `rewind <Duration in Seconds>`,
+  parameters: {"type":"music", "activeplayer": true, "previoussong": false},
+  run: async (client, message, args, cmduser, text, prefix, player) => {
+    try{
+
+      if (!args[0])
+        return message.channel.send(new MessageEmbed()
+          .setColor(ee.wrongcolor)
+          .setTitle(`<:no:833101993668771842> You may rewind for \`1\` - \`${player.queue.current.duration}\``)
+        );
+      let seektime = player.position - Number(args[0]) * 1000;
+      if (seektime >= player.queue.current.duration - player.position || seektime < 0) {
+        seektime = 0;
+      }
+      //seek to the right time
+      player.seek(Number(seektime));
+      //send success message
+      return message.channel.send(new MessageEmbed()
+        .setTitle(`${emoji.msg.rewind} Rewinded the song for \`${args[0]} Seconds\` to: ${format(Number(player.position))}`)
+        .addField(`${emoji.msg.time} Progress: `, createBar(player))
+        .setColor(ee.color)
+      );
+    } catch (e) {
+      console.log(String(e.stack).bgRed)
+      return message.channel.send(new MessageEmbed()
+        .setColor(ee.wrongcolor)
+        
+        .setTitle(`${emoji.msg.ERROR} An error occurred`)
+        .setDescription(`\`\`\`${e.message}\`\`\``)
+      );
+    }
+  }
+};
+/**
+ * @INFO
+ * Bot Coded by Tomato#6966 | https://github.com/Tomato6966/discord-js-lavalink-Music-Bot-erela-js
+ * @INFO
+ * Work for Milrato Development | https://milrato.eu
+ * @INFO
+ * Please mention Him / Milrato Development, when using this Code!
+ * @INFO
+ */

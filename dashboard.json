@@ -1,0 +1,32 @@
+{
+    "bot": {
+        "prefix": ",",
+        "id": "882311254423765012",
+        "secret": "7ZYnYAojCI6IYnesGxmKGfqmjClvq3Pd",
+        "token": "ODgyMzExMjU0NDIzNzY1MDEy.YS5iYw.rFJl5iQiDk87tOVRVyPIJU5-Q9s"
+    },
+    "dashboard": {
+        "port": 3000,
+        "url": "https://hydroxbot.xyz",
+        "callback": "https://hydroxbot.xyz/callback",
+        "discord_server_ID": "873830974331441172",
+        "ownerids": ["729554449844011130", "745581095747059722"],
+        "ownershow": false,
+        "owners": [
+            {
+                "id": "745581095747059722",
+                "desc": "Onwer Of Uptimer Development"
+            },
+            {
+                "id": "729554449844011130",
+                "desc": "Co Owner Of Uptimer Development"
+            }
+        ],
+        "arc": {
+            "enabled": false,
+            "code": ""
+        }
+    },
+    "mongodb": "mongodb+srv://sakshyambaral:sakshyam0909@cluster0.gsfab.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "discord": "https://discord.gg/sVxzqQZsMA"
+}
