@@ -71,3 +71,5 @@ This project is licensed under the MIT. See the [LICENSE](https://github.com/Not
 - [Exil](https://github.com/dxil) (New Features, Bug fixes, Testing, Help Page , New Updateds, Support)
 - [Joao-Victor-Liporini](https://github.com/Joao-Victor-Liporini) (Bug fixes, Command handler improvements, Testing, New features)
 
+## Credits
+- If you are using the code Then make sure to give credits to us If we caught you doing this without credits then We can Directly report you with our license
