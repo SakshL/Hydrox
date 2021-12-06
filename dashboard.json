@@ -1,9 +1,9 @@
 {
     "bot": {
-        "prefix": ",",
-        "id": "882311254423765012",
-        "secret": "7ZYnYAojCI6IYnesGxmKGfqmjClvq3Pd",
-        "token": "ODgyMzExMjU0NDIzNzY1MDEy.YS5iYw.rFJl5iQiDk87tOVRVyPIJU5-Q9s"
+        "prefix": "Bot Prefix",
+        "id": "Bot Id",
+        "secret": "Bot Secret",
+        "token": "Bot Token"
     },
     "dashboard": {
         "port": 3000,
@@ -27,6 +27,6 @@
             "code": ""
         }
     },
-    "mongodb": "mongodb+srv://sakshyambaral:sakshyam0909@cluster0.gsfab.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "mongodb": "Mongo URL",
     "discord": "https://discord.gg/sVxzqQZsMA"
 }
