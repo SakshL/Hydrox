@@ -29,20 +29,20 @@
 
 3. Add Your Bot Token And APIS In Env File.
 ```
-      * AMEAPI=Your AME API Key
-      * Mongo=Your Mongo
-      * BOT_TOKEN=Your Bot Token
-      * MONGO_URI=Your Mongo Url
-      * NASA_TOKEN=Your Nasa Token
+* AMEAPI=Your AME API Key
+* Mongo=Your Mongo
+* BOT_TOKEN=Your Bot Token
+* MONGO_URI=Your Mongo Url
+* NASA_TOKEN=Your Nasa Token
 ```
 4. Don't Know How To Get Apis? [Join Our Discord](https://discord.gg/ExKW6wHuY9)
 5. Installing Packages
 ```
-npm install
-npm install -g npm
-npm i discord-buttons
-npm i discord.js
-node index.js
+* npm install
+* npm install -g npm
+* npm i discord-buttons
+* npm i discord.js
+* node index.js
 ```
 
 <hr>
