@@ -2,7 +2,7 @@
 <p align="center"><img width="55%" src="https://raw.githubusercontent.com/Nightwatch/nightwatch/master/img/slogan.png"/></p>
 
 <p align="center">All In One Discord Bot Including A Web Interface And More!</p>
-<p align="center"><a href="https://discord.com/api/oauth2/authorize?client_id=882311254423765012&permissions=8&scope=bot">Invite me</a>&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;<a href="https://discord.gg/ExKW6wHuY9">Join my server</a>&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;<a href="https://hydroxbot.xyz/">Website</a></p>
+<p align="center"><a href="https://discord.com/api/oauth2/authorize?client_id=882311254423765012&permissions=8&scope=bot">Invite me</a>&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;<a href="https://discord.gg/q2VMwvQWZk">Join my server</a>&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;<a href="https://hydroxbot.xyz/">Website</a></p>
 
 <br/>
 
@@ -35,7 +35,7 @@
 * MONGO_URI=Your Mongo Url
 * NASA_TOKEN=Your Nasa Token
 ```
-4. Don't Know How To Get Apis? [Join Our Discord](https://discord.gg/ExKW6wHuY9)
+4. Don't Know How To Get Apis? [Join Our Discord](https://discord.gg/q2VMwvQWZk)
 5. Installing Packages
 ```
 * npm install
@@ -55,7 +55,7 @@
 <hr>
 
 ## Support / Help
-* [Join Our Server For Help](https://discord.gg/ExKW6wHuY9)
+* [Join Our Server For Help](https://discord.gg/q2VMwvQWZk)
 * [Add Me On Discord](https://discord.com/user/745581095747059722)
 * [*NotSaksh#6969*](https://www.youtube.com/channel/UCCSxnxwMXQHTAIjVjaAg7CQ)
 
