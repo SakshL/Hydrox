@@ -74,7 +74,7 @@ When submitting a pull request:
 This project is licensed under the MIT. See the [LICENSE](https://github.com/NotSaksh/Hydrox/blob/master/license.md) File For Details
 
 ## Contributors
-- [NotUnknown](https://github.com/NotUnknown) (Emoji config support, Bug fixes, New features, Testing)
+- [NotUnknown](https://github.com/NotUnknown) (Emoji config support, Bug fixes, New features, Testing, Etc)
 - [IgorKowalczyk](https://github.com/IgorKowalczyk) (Bug fixes, Command handler improvements, Testing, New features)
 - [Meko](https://github.com/meko) (Bug fixes, Command handler improvements, Testing, New features)
 - [Exil](https://github.com/dxil) (New Features, Bug fixes, Testing, Help Page , New Updateds, Support)
