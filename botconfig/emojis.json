@@ -1,0 +1,20 @@
+{
+  "sucess": "<a:hydroxyes:887678938988568576>",
+  "error": "<:hydroxno:887678965102309376>",
+  "loading": "<a:hydroxloading:887741194979930152>",
+  "warn": "<:hydroxwarn:887743411925442570>",
+  "user": "<:hydroxUsers:887743738816913428>",
+  "ping": "<a:hydroxonline:887679089123680256>",
+  "muted": "<a:hydroxmuted:887744017998164069>",
+  "question": "<:hydroxquestion:887742009387941908>",
+  "userkick": "<a:hydroxyes:887678938988568576>",
+  "userban": "<a:hydroxyes:887678938988568576>",
+  "fun": "<:hydroxfun:887762610970325024>",
+  "Settings": "<:hydroxSettings:887762219784355860>",
+  "settings": "<:hydroxsetting:887763023744344064>",
+  "channellock": "",
+  "nsfw": "<:hydroxnsfw:887777514699784203>",
+  "category": "<:hydroxcategory:887761870398824458>"
+}
+ 
+//this would't work if you are using replit
