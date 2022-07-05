@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@discordjs/opus": "^0.5.3",
+    "@discordjs/opus": "^0.8.0",
     "@ksoft/api": "^3.1.9",
     "@replit/database": "^2.0.1",
     "@weky/inlinereply": "0.0.0",
