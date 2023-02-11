@@ -38,7 +38,7 @@
     "discord-ytdl-core": "^5.0.4",
     "discord.js": "^12.5.3",
     "discord.js-akinator": "^2.1.0",
-    "distube": "^2.8.15",
+    "distube": "^4.0.4",
     "djsdocs": "^1.0.0",
     "dotenv": "^8.6.0",
     "ejs": "^3.1.6",
